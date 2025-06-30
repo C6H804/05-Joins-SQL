@@ -28,7 +28,7 @@ SELECT CONCAT(last_name, " ", first_name) "étudiants", exam.* FROM Student
 LEFT JOIN exam ON Student.student_id = exam.student_id;
 
 -- 7 - Afficher toutes les formations même si aucun étudiant n'y est inscrit.
-select * from course;
+select course_name from course;
 
 -- 8 - Afficher les examens associés à un cours, y compris les cours sans examens (si possible).
 SELECT exam.* FROM exam
